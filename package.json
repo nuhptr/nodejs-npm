@@ -2,10 +2,12 @@
   "name": "pzn-nodejs-npm",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "prestart": "echo \"prestart\"",
+    "start": "node index.js",
+    "poststart": "echo \"poststart\"",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adi Nugraha Putra",
@@ -18,5 +20,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nuhptr/nodejs-npm"
-  }
+  },
+  "type": "module"
 }
