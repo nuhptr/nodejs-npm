@@ -2,7 +2,10 @@
   "name": "pzn-nodejs-npm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./write": "./write.js"
+  },
   "scripts": {
     "prestart": "echo \"prestart\"",
     "start": "node index.js",
@@ -21,5 +24,11 @@
     "type": "git",
     "url": "https://github.com/nuhptr/nodejs-npm"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "moment": "^2.29.4"
+  }
 }
