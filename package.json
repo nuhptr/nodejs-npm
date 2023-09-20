@@ -26,6 +26,7 @@
   },
   "type": "module",
   "dependencies": {
+    "learn-npm-package": "^1.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
